@@ -1,7 +1,5 @@
 class School
 
-  GRADE = []
-
   def initialize(name)
     @name = name
     @roster = {}
@@ -17,8 +15,7 @@ class School
   end
 
   def grade(grade)
-    @grade = grade
-    @roster[@grade]
+    @roster[grade]
   end
 
   def sort
